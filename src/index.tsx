@@ -1,17 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Amplify from "aws-amplify";
 
 import "./index.css";
-import awsConfig from "./aws-exports";
-import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-
-Amplify.configure(awsConfig);
+import { AppProviders } from "./context";
+import { AppRoutes } from "./components/Authenticator";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <AppProviders>
+      <AppRoutes />
+    </AppProviders>
   </React.StrictMode>,
   document.getElementById("root")
 );

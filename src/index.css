@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+h1 {
+  @apply text-6xl;
+}
+
+h2 {
+  @apply text-3xl;
+}
+
+input {
+  @apply w-full p-2 text-lg border border-gray-600;
+}
+
+p {
+  @apply text-lg;
+}
+
+a {
+  @apply text-pink-500 underline;
+}
